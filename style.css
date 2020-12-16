@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#logo {
+    font-family: "Lobster", cursive;
+    font-size: 2rem;
+    color: white;
+}
+
+header {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    font-size: 1.1rem;
+}
+
+nav h1, nav ul {
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+a:hover {
+    color: white;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 5rem;
+    font-family: "Lobster", cursive;
+    color: white;
+}
+
+.home {
+    background: linear-gradient(to right top, #4568DC, #B06AB3);
+}
+
+.contact {
+    background: linear-gradient(to right top, #FC5C7D, #6A82FB);
+}
+
+.about {
+    background: linear-gradient(to right top, #B24592, #F15F79);
+}
+
+.bubble {
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(to right top, #4568DC, #B06AB3);
+    transform: scale(2);
+    transition: all 0.5s ease-in-out;
+}
